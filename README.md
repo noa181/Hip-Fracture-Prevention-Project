@@ -45,9 +45,9 @@ the code is divided into 2 main parts:
 
    explanation:
 
-   **main** - from here we run the code, it calls the class_Start file.
+   **main** - from this file we run the code, it calls the class_Start file.
 
-   **class_Start** - is divided to 2 main functions, one for the calibration process and one for the regular measurement process. it calls the class_Calibration file and the class_Regular_Meas file.
+   **class_Start** - is divided into 2 main functions, one for the calibration process and one for the regular measurement process. it calls the class_Calibration file and the class_Regular_Meas file.
 
    **class_Calibration** - in it we have audio instructions, calibration run and calculations for both legs simultaneously.
 
@@ -55,9 +55,9 @@ the code is divided into 2 main parts:
 
    the calibration and the regular measurement call this files:
 
-   **class_Measurement** - read the data from the serial port and some data processing. it calls the class_IMU_dict file.
+   **class_Measurement** - reads the data from the serial port and does some data processing. it calls the class_IMU_dict file.
 
-   **clas_IMU_dict** - includes there is the dictionary that we save the data measurement in it, it also has a function that get part of the dict according to time range for the gait characteristic                                    calculation. the dictionary size is limited.
+   **clas_IMU_dict** - included there is the dictionary in which we save the data measurement. it also has a function that gets part of the dictionary according to time range for the gait characteristic                                    calculation. the dictionary size is limited.
 
    **class_COP** - COP calculation.
 
