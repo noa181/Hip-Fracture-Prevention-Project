@@ -26,19 +26,19 @@ the system block diagram:
 
 the code is divided to 2 main parts:
 1. arduino code (C++) for the micro-controller:
-   in this part we collect the measurements from all the sensors, there is initial data processing and we     send the processed data to the PC.
+   in this part we collect the measurements from all the sensors, there is initial data processing, and we     send the processed data to the PC.
    
 2. python code for PC:
-   in this the we are doing the main data processing.
-   this part is devided to several code files according to each file purpose.
+   in this we are doing the main data processing.
+   this part is divided to several code files according to each file purpose.
    the data processing code scheme:
    ![image](https://github.com/noa181/Hip-Fracture-Prevention-Project/assets/130772888/1c89c14e-c83b-4aea-8d55-228ede9410af)
 
    explanation:
 
-   main - from here we run the code, it calles the class_Start file.
+   main - from here we run the code, it calls the class_Start file.
 
-   class_Start - is devided to 2 main functions, one for the calibration process and one for the regular      measurement process. it calles the class_Calibration file and the class_Regular_Meas file.
+   class_Start - is divided to 2 main functions, one for the calibration process and one for the regular      measurement process. it calls the class_Calibration file and the class_Regular_Meas file.
 
    class_Calibration - in it we have audio instructions, calibration run and calculations for both legs       simultaneously.
 
@@ -46,9 +46,9 @@ the code is divided to 2 main parts:
 
    the calibration and the regular measurement call this files:
 
-   class_Measurement - read the data from the sirial port and some data processing. it calles the             class_IMU_dict file.
+   class_Measurement - read the data from the serial port and some data processing. it calls the             class_IMU_dict file.
 
-   clas_IMU_dict - includes there is the dictionary that we save the data measurement in it, it also have     a function that get part of the dict according to time range for the gait charecteristic calculation.      the dictionary size is limited.
+   clas_IMU_dict - includes there is the dictionary that we save the data measurement in it, it also has     a function that get part of the dict according to time range for the gait characteristic calculation.      the dictionary size is limited.
 
    class_COP - COP calculation.
 
@@ -68,24 +68,24 @@ the code is divided to 2 main parts:
 
    file with the calculated walking speed from the regular measurement.
 
-   if a file size exceed its size limit a new file with the same name + new index opens.
+   if a file size exceeds its size limit a new file with the same name + new index opens.
 
    the Therapist visualization code scheme:.
 ![image](https://github.com/noa181/Hip-Fracture-Prevention-Project/assets/130772888/87684b12-74d6-4a7b-afc7-6c45fad6aab6)
 
    explanation:
 
-   class_Therapist - from here we run the code, in it there is an interface in the terminal where the         therapist can choose which function he want to run and insert the relevant files names. it calles the      functions files.
+   class_Therapist - from here we run the code, in it there is an interface in the terminal where the         therapist can choose which function, he want to run and insert the relevant files names. it calls the      functions files.
 
-   class_Visualization - includes all the functions for the data visualization. it calles the class_Index     file and the class_Index_Video file.
+   class_Visualization - includes all the functions for the data visualization. it calls the class_Index     file and the class_Index_Video file.
 
-   class_Index - GUI that visualaze the COP changes during the regular measurement.
+   class_Index - GUI that visualize the COP changes during the regular measurement.
 
-   class_Index_Video - a video that shows the COP cahnges during the regular measurement. 
+   class_Index_Video - a video that shows the COP changes during the regular measurement. 
 
 
 
-there is a previus project with the same hardware:
+there is a previous project with the same hardware:
 
 https://lotanbs.wixsite.com/walk
 
