@@ -86,7 +86,7 @@ the code is divided into 2 main parts:
 
    explanation:
 
-   **class_Therapist** - from here we run the code, in it there is an interface in the terminal where the therapist can choose which function, he want to run and insert the relevant files names. it calls the      functions files.
+   **class_Therapist** - from this file we run the code. in it there is an interface in the terminal where the therapist can choose which function he wants to run and insert the relevant files names. it calls the      functions files.
 
    **class_Visualization** - includes all the functions for the data visualization. it calls the class_Index file and the class_Index_Video file.
 
