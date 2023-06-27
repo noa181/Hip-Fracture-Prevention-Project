@@ -24,7 +24,24 @@ the code is devided to 2 main parts:
    the data processing code scheme:
    ![image](https://github.com/noa181/Hip-Fracture-Prevention-Project/assets/130772888/1c89c14e-c83b-4aea-8d55-228ede9410af)
 
-
+explanation:
+main - from here we run the code, it calles the class_Start file.
+class_Start - is devided to 2 main functions, one for the calibration process and one for the regular measurement process. it calles the class_Calibration file and the class_Regular_Meas file.
+class_Calibration - in it we have audio instructions, calibration run and calculations for both legs simultaneously.
+class_Regular_Meas - regular measurement run and calculation for both legs simultaneously, identify near fall.
+the calibration and the regular measurement call this files:
+class_Measurement - read the data from the sirial port and some data processing. it calles the class_IMU_dict file.
+clas_IMU_dict - includes there is the dictionary that we save the data measurement in it, it also have a function that get part of the dict according to time range for the gait charecteristic calculation. the dictionary size is limited.
+class_COP - COP calculation.
+class_Pedometer - walking speed calculation.
+class_Meas_To_File - saving the data in CSV files. the CSV files size is limited.
+the CSV files are:
+2 files for the data from the calibration, one for each leg.
+file with calibration values that was calculated.
+2 files for the data from the regular measurement, one for each leg.
+file with the calculated COP from the regular measurement.
+file with the calculated walking speed from the regular measurement.
+if a file size exceed its size limit a new file with the same name + new index opens.
 
 
 
