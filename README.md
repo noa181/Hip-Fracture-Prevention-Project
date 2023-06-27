@@ -38,15 +38,15 @@ the code is divided to 2 main parts:
 
    **main** - from here we run the code, it calls the class_Start file.
 
-   class_Start - is divided to 2 main functions, one for the calibration process and one for the regular      measurement process. it calls the class_Calibration file and the class_Regular_Meas file.
+   **class_Start** - is divided to 2 main functions, one for the calibration process and one for the          regular measurement process. it calls the class_Calibration file and the class_Regular_Meas file.
 
-   class_Calibration - in it we have audio instructions, calibration run and calculations for both legs       simultaneously.
+   **class_Calibration** - in it we have audio instructions, calibration run and calculations for both         legs simultaneously.
 
-   class_Regular_Meas - regular measurement run and calculation for both legs simultaneously, identify        near fall.
+   **class_Regular_Meas** - regular measurement run and calculation for both legs simultaneously, identify     near fall.
 
    the calibration and the regular measurement call this files:
 
-   class_Measurement - read the data from the serial port and some data processing. it calls the             class_IMU_dict file.
+   **class_Measurement** - read the data from the serial port and some data processing. it calls the           class_IMU_dict file.
 
    clas_IMU_dict - includes there is the dictionary that we save the data measurement in it, it also has     a function that get part of the dict according to time range for the gait characteristic calculation.      the dictionary size is limited.
 
