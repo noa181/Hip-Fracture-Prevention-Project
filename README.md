@@ -98,7 +98,7 @@ the code is divided to 2 main parts:
 
 
 
-
+***
 there is a previous project with the same hardware:
 
 https://lotanbs.wixsite.com/walk
