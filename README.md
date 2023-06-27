@@ -11,7 +11,11 @@ Each shoe has a separate sensor system that includes:
 As part of the project, we are using the data that was received from the sensors, to identify changes in the characteristics of the patient's gait, that can indicate a danger of falling in a future walking cycle. 
 we chose to focus on two gait characteristics - decrease in the walking speed and a rapid deviation of the center of pressure to the side.
 When the sensor system detects a future fall, it will send a signal to the mechanical system to activate it, and then the smart walking cane will open its support legs. 
-
+the code is devided to 2 main parts:
+1. arduino code (C++) for the micro-controller:
+   in this part we collect the measurements from all the sensors, there is initial data processing and we     send the processed data to the PC.
+2. python code for PC:
+   in this the we are doing the main data processing.
 
 
 
