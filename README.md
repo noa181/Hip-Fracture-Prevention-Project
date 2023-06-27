@@ -4,7 +4,6 @@ We focused on stroke survivors that suffers from hemiparesis with moderate funct
 The system integrates a smart sensor system in the shoe insoles and a mechanical system of a smart walking cane.
 The mechanical system:
 ![image](https://github.com/noa181/Hip-Fracture-Prevention-Project/assets/130772888/16b513a6-5b39-4828-a069-7e0c13c458e6)
-
 The insole system:
 ![image](https://github.com/noa181/Hip-Fracture-Prevention-Project/assets/130772888/d377d088-ffaf-44c6-8e5d-2a79a24ee451)
 Each shoe has a separate sensor system that includes:
