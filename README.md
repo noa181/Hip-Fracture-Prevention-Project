@@ -20,6 +20,10 @@ the code is devided to 2 main parts:
    in this part we collect the measurements from all the sensors, there is initial data processing and we     send the processed data to the PC.
 2. python code for PC:
    in this the we are doing the main data processing.
+   this part is devided to several code files according to each file purpose.
+   the data processing code scheme:
+   ![image](https://github.com/noa181/Hip-Fracture-Prevention-Project/assets/130772888/1c89c14e-c83b-4aea-8d55-228ede9410af)
+
 
 
 
