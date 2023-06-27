@@ -48,13 +48,13 @@ the code is divided to 2 main parts:
 
    **class_Measurement** - read the data from the serial port and some data processing. it calls the           class_IMU_dict file.
 
-   clas_IMU_dict - includes there is the dictionary that we save the data measurement in it, it also has     a function that get part of the dict according to time range for the gait characteristic calculation.      the dictionary size is limited.
+   **clas_IMU_dict** - includes there is the dictionary that we save the data measurement in it, it also       has a function that get part of the dict according to time range for the gait characteristic               calculation. the dictionary size is limited.
 
-   class_COP - COP calculation.
+   **class_COP** - COP calculation.
 
-   class_Pedometer - walking speed calculation.
+   **class_Pedometer** - walking speed calculation.
 
-   class_Meas_To_File - saving the data in CSV files. the CSV files size is limited.
+   **class_Meas_To_File** - saving the data in CSV files. the CSV files size is limited.
 
    the CSV files are:
 
@@ -75,13 +75,13 @@ the code is divided to 2 main parts:
 
    explanation:
 
-   class_Therapist - from here we run the code, in it there is an interface in the terminal where the         therapist can choose which function, he want to run and insert the relevant files names. it calls the      functions files.
+   **class_Therapist** - from here we run the code, in it there is an interface in the terminal where the     therapist can choose which function, he want to run and insert the relevant files names. it calls the      functions files.
 
-   class_Visualization - includes all the functions for the data visualization. it calls the class_Index     file and the class_Index_Video file.
+   **class_Visualization** - includes all the functions for the data visualization. it calls the              class_Index file and the class_Index_Video file.
 
-   class_Index - GUI that visualize the COP changes during the regular measurement.
+   **class_Index** - GUI that visualize the COP changes during the regular measurement.
 
-   class_Index_Video - a video that shows the COP changes during the regular measurement. 
+   **class_Index_Video** - a video that shows the COP changes during the regular measurement. 
 
 
 
