@@ -24,7 +24,7 @@ When the sensor system detects a future fall, it will send a signal to the mecha
 the system block diagram:
 ![image](https://github.com/noa181/Hip-Fracture-Prevention-Project/assets/130772888/be51e72f-09a3-4349-9a5b-0f7bfa3ce0e3)
 
-the code is devided to 2 main parts:
+the code is divided to 2 main parts:
 1. arduino code (C++) for the micro-controller:
    in this part we collect the measurements from all the sensors, there is initial data processing and we     send the processed data to the PC.
    
