@@ -36,7 +36,7 @@ the code is divided to 2 main parts:
 
    explanation:
 
-   main - from here we run the code, it calls the class_Start file.
+   **main** - from here we run the code, it calls the class_Start file.
 
    class_Start - is divided to 2 main functions, one for the calibration process and one for the regular      measurement process. it calls the class_Calibration file and the class_Regular_Meas file.
 
